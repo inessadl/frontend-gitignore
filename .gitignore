@@ -1,0 +1,158 @@
+# ==============================================
+# Generic .gitignore - macOS + front-end JS
+# ==============================================
+
+# ---------- macOS ----------
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# ---------- Editors ----------
+# VS Code: ignore everything, but keep configs useful for the team
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/tasks.json
+!.vscode/*.code-snippets
+
+# JetBrains (WebStorm etc.)
+.idea/
+
+# Others
+*.swp
+*.swo
+*~
+.history/
+
+# ---------- Dependencies ----------
+node_modules/
+jspm_packages/
+bower_components/
+
+# pnpm
+.pnpm-store/
+
+# Yarn (Berry / v2+)
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
+
+# ---------- Environment variables ----------
+# Ignore all .env files, but keep the example ones
+.env
+.env.*
+!.env.example
+!.env.sample
+
+# ---------- Builds and framework output ----------
+dist/
+build/
+out/
+
+# Next.js
+.next/
+next-env.d.ts
+
+# Nuxt
+.nuxt/
+.output/
+
+# SvelteKit
+.svelte-kit/
+
+# Astro
+.astro/
+
+# Remix / React Router
+.cache/
+.react-router/
+
+# Vite
+.vite/
+*.local
+
+# Parcel
+.parcel-cache/
+
+# Turborepo
+.turbo/
+
+# Storybook
+storybook-static/
+
+# Deploy (Vercel, Netlify)
+.vercel/
+.netlify/
+
+# ---------- Tests ----------
+coverage/
+.nyc_output/
+playwright-report/
+test-results/
+blob-report/
+playwright/.cache/
+cypress/videos/
+cypress/screenshots/
+
+# ---------- Tool caches ----------
+.eslintcache
+.stylelintcache
+*.tsbuildinfo
+.sass-cache/
+
+# ---------- Logs ----------
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ---------- Local certificates and keys ----------
+*.pem
+*.key
+*.crt
+
+# ---------- AI assistants ----------
+# Claude Code: personal settings and notes stay local.
+# Keep CLAUDE.md, .claude/settings.json and .mcp.json committed.
+.claude/settings.local.json
+CLAUDE.local.md
+
+# ---------- Terminal and CLI leftovers ----------
+# Git merge and patch leftovers
+*.orig
+*.rej
+
+# npm pack output
+*.tgz
+
+# Shell and Node
+nohup.out
+.node_repl_history
+.direnv/
+
+# ---------- Temporary files ----------
+tmp/
+temp/
+*.tmp
